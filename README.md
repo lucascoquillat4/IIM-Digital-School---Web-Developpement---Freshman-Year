@@ -77,23 +77,24 @@ This repository reflects that academic approach.
 
 ---
 
-# 🧭 Learning Areas
+# 🧭 Learning Areas 
 
-The year covered several major areas:
+The year covered several major areas: 
 
-    IIM — COMMON CORE
-             │
-    ┌────────┼────────┐
-    │        │        │
-DEVELOPMENT DESIGN  DIGITAL
-    │        │        │
-    │        │    Web Marketing
-    │        │    Project Design
-    │        │    User Experience
-    │        │
-    └────────┼────────┘
-             │
-       UI / Integration
+```txt
+                   IIM — COMMON CORE
+                          │
+       ┌──────────────────┼──────────────────┐
+       │                  │                  │
+    DEVELOPMENT        DESIGN            DIGITAL
+       │                  │                  │
+  ┌────┼────┐             │             Web Marketing
+  │    │    │             │             Project Design
+HTML  JS   PHP            │             User Experience
+       │    │             │
+       └─ MySQL           │
+                          │
+                     UI / Integration
 
 The development-related work covered:
 
