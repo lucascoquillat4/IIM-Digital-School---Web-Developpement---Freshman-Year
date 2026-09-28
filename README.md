@@ -81,7 +81,7 @@ This repository reflects that academic approach.
 
 The year covered several major areas: 
 
-```txt
+```
                    IIM — COMMON CORE
                           │
        ┌──────────────────┼──────────────────┐
@@ -95,10 +95,10 @@ HTML  JS   PHP            │             User Experience
        └─ MySQL           │
                           │
                      UI / Integration
-```txt
+```
 
 The development-related work covered:
-
+```
     HTML / CSS
          ↓
     JavaScript
@@ -108,6 +108,7 @@ The development-related work covered:
     MySQL / SQL
          ↓
 Multi-technology Projects
+```
 
 Again, this represents the **academic structure of the courses**, not my personal learning curve as a developer.
 
@@ -139,7 +140,7 @@ The assignment involved creating a multi-page website with different sections an
 - Asset organization
 
 ### Main Structure
-
+```
     exercices-html/
     ├── index.html
     ├── PréBac.html
@@ -154,7 +155,7 @@ The assignment involved creating a multi-page website with different sections an
     │   ├── main.css
     │   └── responsive.css
     └── img/
-
+```
 The goal of this assignment was to demonstrate correct implementation of the requested HTML/CSS concepts rather than to build a production-grade website.
 
 ---
@@ -286,7 +287,7 @@ A basic registration and login system.
 - Password hashing
 
 ### Structure
-
+```
     mon-site-connexion/
     ├── bdd/
     │   └── exercice_login.sql
@@ -297,7 +298,7 @@ A basic registration and login system.
     ├── traitement_login.php
     ├── espace_prive.php
     └── logout.php
-
+```
 ### Technologies
 
 - PHP
@@ -325,14 +326,14 @@ The project demonstrates basic database operations and dynamic PHP rendering.
 - Prepared statements
 
 ### Structure
-
+```
     mon-site-livres/
     ├── bdd/
     │   └── library.sql
     ├── connexion.php
     ├── index.php
     └── ajouter.php
-
+```
 ---
 
 # 🖼️ Timeless Gallery
@@ -378,7 +379,7 @@ A larger front-end project based around the **Eurockéennes de Belfort** festiva
 The project focuses on creating an interactive website experience around the festival and its artists.
 
 ### Main Structure
-
+```
     EurocK/
     ├── index.html
     ├── Game.html
@@ -388,7 +389,7 @@ The project focuses on creating an interactive website experience around the fes
     ├── css/
     ├── js/
     └── img/
-
+```
 ### Features
 
 - Artist presentation
@@ -436,14 +437,14 @@ The project focuses more heavily on:
 - `scrollIt`
 
 ### Structure
-
+```
     donjon&data/
     ├── index.html
     ├── style.css
     ├── css/
     ├── js/
     └── images/
-
+```
 The project demonstrates the use of external JavaScript libraries to enhance a static website with animations and navigation effects.
 
 ---
@@ -501,7 +502,7 @@ The technologies encountered throughout these academic projects include:
 # 📂 Repository Structure
 
 The repository is organized by the different subjects and projects covered during the year.
-
+```
     github/
     │
     ├── donjon&data/
@@ -548,7 +549,7 @@ The repository is organized by the different subjects and projects covered durin
     │   └── TimelessGallery-main-(2)/
     │
     └── exercices-webmarketing/
-
+```
 Some folders contain duplicated or intermediate versions of assignments. These are preserved as part of the academic history of the repository.
 
 ---
@@ -556,7 +557,7 @@ Some folders contain duplicated or intermediate versions of assignments. These a
 # 📈 Academic Progression
 
 The curriculum can be viewed as a progression through different areas of web development:
-
+```
     HTML / CSS
          │
          ▼
@@ -586,7 +587,7 @@ The curriculum can be viewed as a progression through different areas of web dev
          │
          ▼
     Multi-technology Projects
-
+```
 This progression reflects the **structure of the academic curriculum**, rather than my personal progression as a developer.
 
 ---
@@ -674,7 +675,7 @@ The work contained here represents only a small and constrained part of my overa
 My personal development work extends beyond the technologies and concepts demonstrated in these academic assignments.
 
 The projects in this repository should therefore be viewed as:
-
+```
     ACADEMIC WORK
          │
          ▼
@@ -688,7 +689,7 @@ The projects in this repository should therefore be viewed as:
          │
          ▼
     First-Year Record
-
+```
 rather than as a complete representation of my technical background.
 
 ---
