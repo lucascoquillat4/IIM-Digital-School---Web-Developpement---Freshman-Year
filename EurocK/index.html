@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Transversal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="nav-item"><strong>ACCUEIL</strong></a>
+            <a href="News.html" class="nav-item"><strong>NEWS</strong></a>
+            <a href="Promotion.html" class="nav-item"><strong>PROMOTION</strong></a>
+            <a href="Game.html" class="nav-item"><strong>JEU</strong></a>
+        </div>
+        <div class="nav-center">
+            <a href="quizz.html" class="nav-item"><strong>QUIZ</strong></a>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="nav-item" id="loginBtn"><strong>CONNEXION</strong></a>
+            <div id="userSection" style="display: none;">
+                <button id="profileBtn">
+                    <span id="userPoints">Mon Compte</span>
+                </button>
+                <button id="logoutBtn">Déconnexion</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="heroK">
+        <div class="logo-container">
+            <img src="img/euroK_jaune.png" alt="Logo principale" class="main-logo logo-animation">
+        </div>
+
+        <div>
+            <h2 class="titre_date_festival">Dates du festival :</h2>
+            <p class="annonce_date_festival">Les Eurockéennes de Belfort – 3-4-5-6 juillet 2025 sur la Presqu'île du
+                Malsaucy.</p>
+        </div>
+    </section>
+
+        <hr class="section-divider">
+
+    <section class="programming">
+        <h2>Programmation</h2>
+        <div class="days-container">
+            <div class="day-column">
+                <h3>3 Juillet</h3>
+                <div class="slider">
+                    <button class="slider-btn up-btn">
+                        <span class="arrow">↑</span>
+                    </button>
+                    <div class="slider-content">
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/iron-maiden-vignette-1600px-800x520, J3.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Iron Maiden</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/avatar-vignette-1600px-800x520, j3.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Avatar</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/the-raven-age-vignette-1600px-800x520, j3.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>The Raven Age</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Répéter pour chaque artiste -->
+                    </div>
+                    <button class="slider-btn down-btn">
+                        <span class="arrow">↓</span>
+                    </button>
+                </div>
+            </div>
+            <div class="day-column">
+                <h3>4 Juillet</h3>
+                <div class="slider">
+                    <button class="slider-btn up-btn">↑</button>
+                    <div class="slider-content">
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/dj-snake-vignette-1600px-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Dj Snake</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/parcelsvignette-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Parcels</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/kalash-vignette-1600px-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Kalash</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/philippe-katrine-vignette-1600px-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Philippe Katrine</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/ultra-vomit-vignette-1600px-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Ultra Vomit</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/yodelicevignette-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Yodelice</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/landmvarks-vignette-1600px-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Landmvarks</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/silmarilsvignette-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Silmarils</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/deadpoetsocietyvignette-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Dead Poet Society</h4>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/high-vis-vignette-1600px-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>High Vis</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/mortimer-vignette-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Mortimer</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/mrcyvignette-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Mrcy</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/diespitzvignette-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Die Spitz</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/holly-g-vignette-1600px-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Holly G</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/totally-spices-vignette-1600px-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Totally Spice's</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/altarossavignette-1-800x520, v4.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Alta Rossa</h4>
+                                </div>
+                            </div>
+                        </div>   
+                        <!-- Répéter pour chaque artiste -->
+                    </div>
+                    <button class="slider-btn down-btn">↓</button>
+                </div>
+            </div>
+            <div class="day-column">
+                <h3>5 Juillet</h3>
+                <div class="slider">
+                    <button class="slider-btn up-btn">↑</button>
+                    <div class="slider-content">
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/clara-luciani-vignette-1600px-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Clara Luciani</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/sdm-vignette-1600px-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>SDM</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/ofenbachvignette-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Ofenbach</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/la-femme-vignette-1600px-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>La Femme</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/bicepvignette-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>BiCep</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/keziahjonesvignette-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Keziah Jones</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/tif-vignette-1600px-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Tif</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/the-last-train-vignette-1600px-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>The Last Train</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/acid-arab-vignette-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Acid Arab</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/aupinard-vignette-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Aupinard</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/kinghannahvignette-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>King Hannah</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/sylvievignette-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Sylvie</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/fcuckers2vignette2-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>FCKRS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/merveillevignette-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Merveille</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/dsvignette-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Dynamite Shakers</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/marymiddlefieldvignette-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Mary Middlefield</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/akiravignette-1-800x520 s5.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Akira</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Répéter pour chaque artiste -->
+                    </div>
+                    <button class="slider-btn down-btn">↓</button>
+                </div>
+            </div>
+            
+            <div class="day-column">
+                <h3>6 Juillet</h3>
+                <div class="slider">
+                    <button class="slider-btn up-btn">↑</button>
+                    <div class="slider-content">
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/damso-vignette-1600px-800x520 d6.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Damso</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/justice-vignette-1600px-800x520 d6.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Justice</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/the-last-dinner-party-vignette-1600px-800x520 d6.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>The Last Dinner Party</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/ihatemodelsvignette-800x520 d6.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>I Hate Models</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/kneecap-vignette-1600px-800x520 d6.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Kneecap</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/rovignette-800x520 d6.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>R.O.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/lankum-vignette-1600px-800x520 d6.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Lankum</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/unclewafflesvignette-800x520 d6.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Uncle Waffles</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/theodoravignette-800x520 d6.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Theodora</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/malik-djoudi-vignette-1600px-800x520 d6.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Malik Djoudi</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/the-molotovs-vignette-800x520 d6.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>The Molotovs</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/les-serge-vignette-1600px-800x520 d6.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Les Serge</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image-container">
+                                <img src="img/csvignette-800x520 d6.jpg" alt="Artiste 1" class="artist-image">
+                                <div class="artist-info">
+                                    <h4>Crème Solaire</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Répéter pour chaque artiste -->
+                    </div>
+                    <button class="slider-btn down-btn">↓</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ticketing">
+        <div class="bouton-billeterie-container">
+            <a href="https://www.eurockeennes.fr/billetterie/" class="bouton-billeterie" target="_blank">Accéder à la billetterie</a>
+        </div>
+    </section>
+
+    </div>
+    <!-- Modal Connexion -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Connexion</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Mot de passe</label>
+                <input type="password" id="login-password" required>
+            </div>
+            <button type="submit">Se connecter</button>
+        </form>
+        <p class="switch-text">Pas encore de compte ? <button id="switchToRegister" class="switch-btn">S'inscrire</button></p>
+    </div>
+</div>
+
+<!-- Modal Inscription -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Inscription</h2>
+        <form id="register-form">
+            <div class="form-group">
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" required>
+            </div>
+            <div class="form-group">
+                <label for="register-password">Mot de passe</label>
+                <input type="password" id="register-password" required>
+            </div>
+            <div class="form-group">
+                <label for="register-confirm-password">Confirmer le mot de passe</label>
+                <input type="password" id="register-confirm-password" required>
+            </div>
+            <button type="submit">S'inscrire</button>
+        </form>
+        <p class="switch-text">Déjà un compte ? <button id="switchToLogin" class="switch-btn">Se connecter</button></p>
+    </div>
+</div>
+
+<!-- Modal Profil -->
+<div id="profileModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Mon Profil</h2>
+        <div id="adminBadge" class="admin-badge-container" style="display: none;">
+            <span class="admin-badge">ADMIN</span>
+        </div>
+        <div class="profile-info">
+            <div id="personalInfoSection" class="profile-section">
+                <h3>Informations personnelles</h3>
+                <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+                <button id="changePasswordBtn" class="secondary-btn">Changer le mot de passe</button>
+            </div>
+            <div id="adminCredentials" class="profile-section admin-credentials" style="display: none;">
+                <h3>Informations Administrateur</h3>
+                <div class="admin-info">
+                    <p><strong>Email admin:</strong> admin@test.com</p>
+                    <p><strong>Mot de passe admin:</strong> admin123</p>
+                    <div class="admin-note">
+                        <small>Ces informations sont confidentielles</small>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-section">
+                <h3>Mes EuroKoins</h3>
+                <div class="points-display">
+                    <span id="profilePoints" class="points-value">0</span>
+                    <span class="points-label">EuroKoins</span>
+                </div>
+                <p class="points-info">Gagnez plus d'EuroKoins en participant aux quizz et au jeu !</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="main-footer">
+        <div class="social-networks">
+        </div> 
+        <a href="https://www.facebook.com/Eurocks/" rel=""><img src="img/icons8-facebook-nouveau-500.png" alt="Facebook" class="social-logo"></a>
+        <a href="https://www.instagram.com/eurockeennes" rel=""><img src="img/icons8-instagram-500.png" alt="Instagram" class="social-logo"></a>
+        <a href="https://www.deezer.com/fr/channels/leseurockeennes" rel=""><img src="img/DEEZR.PA.D-ebbfdde4 (1).png" alt="Deezer" class="social-logo"></a>
+        <a href="https://www.youtube.com/user/LesEurockeennes" rel=""><img src="img/icons8-youtube-500.png" alt="YouTube" class="social-logo"></a>
+        <a href="https://x.com/eurockeennes" rel=""><img src="img/icons8-twitter-500.png" alt="Twitter" class="social-logo"></a>
+
+        </div>
+        <div class="footer-links">
+            <a href="#">Actualités</a>
+            <a href="#">Contact</a>
+            <a href="#">Mentions légales</a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

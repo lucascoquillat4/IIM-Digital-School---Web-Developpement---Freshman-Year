@@ -1,0 +1,927 @@
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000c40;
+    padding: 1rem;
+    color: #051d89;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, #000c40, #02348900);
+    z-index: -1;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    color: #fcead2;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #fcead2;
+    /* à modif si degeu (gris)*/
+    color: black;
+    border-radius: 4px;
+}
+
+.nav-left {
+    gap: 1rem;
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* navbar */
+
+/* body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #023489;
+    padding-top: 80px;
+}
+
+/* HeroK Section */
+.heroK {
+    background-image: url('img/backgroundEuroK.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    color: white;
+}
+
+.slider {
+    position: relative;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.slider-content {
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    margin: 30px 0;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.3) transparent;
+}
+
+.slider-content::-webkit-scrollbar {
+    width: 4px;
+}
+
+.slider-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slider-content::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.3);
+    border-radius: 2px;
+}
+
+.slider-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.5);
+}
+
+/* Style des boutons du slider */
+.slider-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 30px;
+    border: none;
+    background: #1c4894;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.slider-btn:hover {
+    background-color: #163b82;
+}
+
+.slider-btn .arrow {
+    opacity: 0.7;
+}
+
+.up-btn {
+    top: 0;
+    border-radius: 12px 12px 0 0;
+}
+
+.down-btn {
+    bottom: 0;
+    border-radius: 0 0 12px 12px;
+}
+
+.logo-container {
+    max-width: 350px;
+    /* Augmenté à 350px pour un plus grand logo */
+    margin: -10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    /* Prend 50% de la hauteur de la vue */
+    perspective: 1000px;
+}
+
+.main-logo {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-animation {
+    animation: logoAppear 1.2s ease-out;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+/* Animation du logo */
+@keyframes logoAppear {
+    0% {
+        opacity: 0;
+        transform: translateZ(-100px) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0) scale(1);
+    }
+}
+
+.programming {
+    background-color: #023489;
+    padding-top: 0;
+    padding: 0.5rem 0;
+    color: white;
+    text-align: center;
+}
+
+.titre_date_festival {
+    font-size: 40px;
+}
+
+.annonce_date_festival {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.fond_cp {
+    background-color: #FCEAD2;
+    color: rgb(0, 0, 0);
+    max-width: 800px;
+    margin: 50px auto;
+    line-height: 1.8;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+    font-family: "Monomaniac One", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    bottom: 11px;
+    margin-bottom: 0px;
+}
+
+.fond_sf {
+    background-color: #FCEAD2;
+    color: rgb(0, 0, 0);
+    max-width: 800px;
+    margin: 50px auto;
+    line-height: 1.8;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    bottom: 11px;
+}
+
+.rectangles-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.bouton-billeterie-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.bouton-billeterie {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bouton-billeterie:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
+
+.bouton-billeterie:active {
+    transform: scale(0.95);
+}
+
+.paragraphe_succès {
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.rectangle {
+    width: 400px;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFEE78;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.center-rectangle {
+    background-color: #FF8400;
+}
+
+.days-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.day-column {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    padding: 1rem;
+    width: 200px;
+    min-height: 400px;
+    border-radius: 50px;
+}
+
+.day-column h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: goldenrod;
+}
+
+.artist-card {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #1c4894;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: translateY(-3px);
+}
+
+.artist-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    aspect-ratio: 16/9;
+}
+
+.artist-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.artist-card:hover .artist-image {
+    transform: scale(1.05);
+}
+
+.artist-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+}
+
+.artist-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+}
+
+.artist-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.artists-list {
+    background-color: #4f4fff;
+    margin: 0.5rem 0;
+    height: 300px;
+}
+
+/* Programming Section */
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    /* Ajout des propriétés de centrage */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    /* Suppression de margin et ajout d'animation */
+    margin: 0;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animation d'ouverture du modal */
+.modal.active {
+    display: flex;
+}
+
+.modal.active .modal-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.switch-text {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.switch-btn {
+    background: none;
+    border: none;
+    color: #4CAF50;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0;
+    font-size: 14px;
+}
+
+.switch-btn:hover {
+    text-decoration: underline;
+}
+
+/* Style pour le profil */
+.profile-info {
+    padding: 20px 0;
+}
+
+.profile-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.profile-section h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.points-display {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.points-value {
+    font-size: 48px;
+    font-weight: bold;
+    color: #4CAF50;
+    display: block;
+}
+
+.points-label {
+    font-size: 18px;
+    color: #666;
+}
+
+.points-info {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+.secondary-btn {
+    background-color: #666;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.secondary-btn:hover {
+    background-color: #555;
+}
+
+/* Modification du style userSection pour ajouter le bouton profil */
+#userSection {
+    display: none;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#userEmail {
+    font-weight: 500;
+}
+
+#userPoints {
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+#logoutBtn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#logoutBtn:hover {
+    background-color: #d32f2f;
+}
+
+#profileBtn {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+#profileBtn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+.main-footer {
+    background-color: #000c40;
+    ;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-link {
+    background-color: #ccc;
+    padding: 0.5rem;
+    border-radius: 50%;
+    text-decoration: none;
+    color: black;
+}
+
+.social-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.newsletter-btn {
+    background-color: #ccc;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    margin: 1rem 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: #fcead2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+
+/* Quiz Styles */
+.quiz-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.quiz-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.quiz-progress {
+    font-weight: bold;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.question-container {
+    margin-bottom: 2rem;
+}
+
+.question {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.option {
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option:hover {
+    background-color: #f5f5f5;
+}
+
+.option.selected {
+    border-color: #4CAF50;
+    background-color: #e8f5e9;
+}
+
+.quiz-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-btn:hover {
+    background-color: #45a049;
+}
+
+.auth-message {
+    text-align: center;
+}
+
+.quiz-results {
+    text-align: center;
+}
+
+/* Style pour l'admin */
+.admin-badge {
+    background-color: #ff4444;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.admin-section {
+    display: none; /* Caché par défaut */
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ff4444;
+}
+
+.admin-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.admin-badge {
+    background-color: #ff4444;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.admin-details {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.admin-details ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px 0;
+}
+
+.admin-details li {
+    padding: 5px 0;
+    color: #666;
+}
+
+/* Modification du style du modal pour la section admin */
+#profileModal .modal-content {
+    max-width: 600px;
+}
+
+.admin-badge-container {
+    text-align: center;
+    margin: -10px 0 15px 0;
+}
+
+.admin-badge {
+    background-color: #ff4444;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.admin-credentials {
+    background-color: #fff8f8;
+    border: 1px solid #ffcccc;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.admin-info {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ffe0e0;
+}
+
+.admin-note {
+    margin-top: 10px;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+}
+
+.admin-info p {
+    margin: 8px 0;
+    color: #333;
+}
+
+hr.section-divider {
+    margin: 60px auto;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, goldenrod, transparent);
+    max-width: 600px;
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    margin-bottom: -100px;
+}
+
+.bouton_télécharger {
+    margin-bottom: 100px;
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.titre_cp {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cooldown-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.cooldown-message h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cooldown-message p {
+    color: #666;
+}
+
+.video-container {
+      max-width: fit-content;
+      text-align: center;
+      margin: 0 auto;
+}
+
+iframe {
+    border: none;
+}
+
+/*new*/
+
+.contenu {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.titre-principal {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+.citation {
+    font-style: italic;
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 4px solid #ccc;
+}
+
+.auteur {
+    display: block;
+    margin-top: -10px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+}
+
+.sous-titre {
+    margin: 30px 0 15px 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.liste {
+    list-style-position: inside;
+    padding-left: 0;
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.liste li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 20px;
+}
+
+.hashtags {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.texte {
+    text-align: left;
+    margin: 20px 0;
+}
