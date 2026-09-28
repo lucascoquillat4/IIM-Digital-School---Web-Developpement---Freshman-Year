@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venez redécouvrir les oeuvres d'Arts les plus célèbres en format numérique, sans rien payer! "><!--meta description -->
+    <title>Timeless Gallery</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"> <!--swiper.js -->
+</head>
+<body>
+
+<!-- Header début -->
+    <header>
+        <h1>Timeless Gallery</h1>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">Galerie</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+<!-- Header fin -->
+
+<!-- About début -->
+    <section class="about">
+        <h2>Découvrez l'Art Sans Limite !</h2>
+        <p>Timeless Gallery vous propose une sélection d'œuvres intemporelles, allant de la peinture classique à l'art contemporain.</p>
+        <a href="#" class="cta-button">Explorer la Galerie</a>
+    </section>
+<!-- About fin -->
+
+<!-- Slider début -->
+    <section class="slider-container">
+        <div class="swiper mySwiper" style="height: 500px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><strong>La Grande Vague de Kanagawa (1830)</strong><img src="img/vague.png" alt="La Grande Vague de Kanagawa"></div>
+                <div class="swiper-slide"><strong>La Nuit étoilée (1889)</strong> <img src="img/VG.png" alt="La Nuit étoilée (1889)"></div>
+                <div class="swiper-slide"><strong>Le cri (1893)</strong> <img src="img/leCri.png" alt="Le cri (1893)"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+<!-- Slider fin -->
+
+<!-- Footer début -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 - Tous droits réservés | Lucas Coquillat</p>
+        </div>
+    </footer>
+<!-- Footer fin -->
+
+<!-- Script début -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+        });
+    </script>
+<!-- Script fin -->
+</body>
+</html>
