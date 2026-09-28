@@ -1,0 +1,204 @@
+
+body {
+  font-family: 'Trebuchet MS';
+  background-color: white;
+  margin: 0;
+}
+
+.sidenav {
+  font-family: "Arial";
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: show;
+  box-shadow: 10px 5px 5px grey;
+  padding-top: 20px; 
+}
+
+
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: whitesmoke;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: darkorange;
+}
+
+
+p {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+
+h1 {
+  color: black;
+  font-family: "Arial";
+  text-align: center;
+  padding-left: 250px;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #71B8FF;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+.description,
+.descriptionautre {
+  padding-left: 275px;
+  font-size: 1.5em;
+  color: black;
+  text-align: center;
+}
+
+
+
+.couleur {
+  color: #001aa1;
+}
+
+img {
+  width: 100px;
+  z-index: 2;
+  padding-right: 5px;
+}
+
+.Retour {
+  text-align: center;
+  padding-right: 20px;
+}
+
+aside {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+a {
+  padding-bottom: 15px;
+}
+
+.z {
+  font-size: 19px;
+}
+
+.color {
+  color: white;
+}
+
+button {
+  color: black;
+  margin-top: 50px;
+  margin-left: 700px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 360px;
+  height: 150px;
+  font-size: 2em;
+  background-color: whitesmoke;
+}
+
+button:hover {
+  background-color: darkgrey;
+}
+
+.AutreTitre {
+  margin-left: 690px;
+}
+
+.image {
+  margin: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .sidenav {
+      width: 200px;
+  }
+
+  .sidenav a {
+      font-size: 1.2em;
+      padding: 8px 12px;
+  }
+
+
+  h1 {
+      font-size: 2em;
+      padding-left: 200px;
+  }
+
+
+  .description,
+  .descriptionautre {
+      padding-left: 50px;
+      font-size: 1.2em;
+  }
+
+
+  button {
+      width: 100%;
+      margin-left: 0;
+      font-size: 1.5em;
+      height: 120px;
+  }
+
+
+  img {
+      width: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+
+  .sidenav a {
+      font-size: 1.2em;
+      padding: 10px;
+  }
+
+
+  h1 {
+      font-size: 1.8em;
+      padding-left: 20px;
+  }
+
+  h2 {
+      font-size: 1.2em;
+  }
+
+
+  .description,
+  .descriptionautre {
+      padding-left: 50px;
+      font-size: 1em;
+  }
+
+
+  button {
+      width: 100%;
+      margin-left: 0;
+      font-size: 1.3em;
+      height: 100px;
+  }
+}
