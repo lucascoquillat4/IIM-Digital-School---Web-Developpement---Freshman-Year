@@ -95,6 +95,7 @@ HTML  JS   PHP            │             User Experience
        └─ MySQL           │
                           │
                      UI / Integration
+```txt
 
 The development-related work covered:
 
